@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/styles/home-page/main.min.css">
+    <style>
+        html {
+            overflow: hidden;
+            height: 100%;
+            background: linear-gradient(to right, #00d2ff, #3a7bd5)
+        }
+    </style>
+</head>
+<body class="body body_hidden">
+    <canvas class="canvas"></canvas>
+    <nav class="nav">
+        <ul class="nav__menu">
+            <li class="nav__item"><a target="_blank" href="https://github.com/tier4ik" rel="noopener" class="nav__link">My Github</a></li>
+            <li class="nav__item"><a href="/projects.html" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="/links.html" class="nav__link">Useful links</a></li>
+        </ul>
+    </nav>
+    <!-- Scripts -->
+    <script src="./dist/scripts/home-page/prism.js"></script>
+    <script src="./dist/scripts/home-page/canvasManager.js"></script>
+    <script src="./dist/scripts/home-page/setupCanvas.js"></script>
+    <script src="./dist/scripts/home-page/main.js"></script>
+</body>
+</html>

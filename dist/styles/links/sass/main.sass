@@ -1,0 +1,75 @@
+.body 
+    margin: 0
+    padding: 0
+    height: 100vh
+    position: relative
+    transition: all .4s ease
+    overflow: hidden
+    &_hidden
+        opacity: 0 
+*
+    box-sizing: border-box
+.links
+    width: 1200px
+    margin: auto
+    position: relative
+    &__name
+        font-size: 4rem
+        font-family: 'Bungee', cursive
+        text-shadow: 10px 10px 10px rgba(3, 46, 66, .8)
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 1)
+        margin: 0 0 3rem
+        text-align: center
+        letter-spacing: .4rem
+        position: relative
+        &::before, &::after
+            content: ''
+            display: block
+            width: 250px
+            height: 4px
+            background-color: rgb(3, 46, 66)
+            position: absolute
+            top: 50%
+            left: 0
+            box-shadow: 10px 10px 10px rgba(3, 46, 66, .8)
+            border-radius: 4px
+        &::after
+            left: auto
+            right: 0
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        padding: 0 2rem
+        list-style-type: none
+    &__item
+        padding: 0 .5rem
+        background-color: rgba(3, 46, 66, .2)
+        border-radius: 10px
+        border: 2px solid rgb(3, 46, 66)
+        transition: all .3s ease
+        margin-bottom: 40px
+    &__link
+        font-size: 2rem
+        text-decoration: none
+        font-family: 'Bungee', cursive
+        color: rgb(3, 46, 66)
+        transition: all .3s ease
+        &:active, &:visited
+            color: rgb(3, 46, 66)
+.back
+    position: absolute
+    left: 0
+    top: 50%
+    font-family: 'Bungee', cursive
+    font-size: 6rem
+    line-height: 6rem
+    letter-spacing: .5rem
+    color: rgba(255, 255, 255, .3)
+    transform: rotate(-90deg) translateY(-200%)
+    text-decoration: none
+    transition: all .4s ease
+    &:active, &:focus, &:visited
+        color: rgba(255, 255, 255, .3)
+
+@import 'media'

@@ -1,0 +1,27 @@
+@media ( hover: hover )
+    .nav
+        &__item
+            &:first-child
+                &:hover
+                    transform: translateX(20px)
+            &:nth-child(2)
+                &:hover
+                    letter-spacing: .8rem
+            &:last-child
+                &:hover
+                    transform: translateX(-20px)
+
+@media screen and (max-width: 576px)
+    .nav
+        width: 340px
+        height: 300px
+        position: fixed
+        &__item
+            height: 100px
+        &__link
+            font-size: 2rem
+@media screen and (max-width: 368px)
+    .nav
+        width: 90%
+        transform: rotate(0deg) skew(0deg)
+    
