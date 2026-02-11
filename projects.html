@@ -22,6 +22,8 @@
   <body class="body body_hidden">
     <section class="projects">
       <h1 class="projects__name">Projects</h1>
+      <p class="projects__click-describer"><u>Click</u> - open page</p>
+      <p class="projects__click-describer"><u>Click + ctrl</u> - open repo</p>
       <div class="projects__container">
         <div class="projects__row" data-row="1">
           <div class="cell projects__cell" data-number="1"></div>
@@ -33,10 +35,10 @@
           <div class="cell projects__cell" data-number="5"></div>
           <div class="cell projects__cell" data-number="6">
             <a
+              target="_blank"
               class="cell__inner"
               href="https://tier4ik.github.io/react-admin"
-              target="_blank"
-              rel="noopener"
+              data-repohref="https://github.com/tier4ik/react-admin"
             >
               <img
                 class="cell__image"
@@ -49,10 +51,10 @@
           <div class="cell projects__cell" data-number="7"></div>
           <div class="cell projects__cell" data-number="8">
             <a
+              target="_blank"
               class="cell__inner"
               href="https://lit-ocean-93722.herokuapp.com"
-              target="_blank"
-              rel="noopener"
+              data-repohref="https://github.com/tier4ik/tab-tracker"
             >
               <img
                 class="cell__image"
@@ -68,10 +70,10 @@
           <div class="cell projects__cell" data-number="10"></div>
           <div class="cell projects__cell" data-number="11">
             <a
+              target="_blank"
               class="cell__inner"
               href="https://tier4ik.github.io/beauty-salon/"
-              target="_blank"
-              rel="noopener"
+              data-repohref="https://github.com/tier4ik/tier4ik.github.io/tree/master/beauty-salon"
             >
               <img
                 class="cell__image"
@@ -83,10 +85,10 @@
           </div>
           <div class="cell projects__cell" data-number="12">
             <a
+              target="_blank"
               class="cell__inner"
               href="https://tier4ik.github.io/resume/"
-              target="_blank"
-              rel="noopener"
+              data-repohref="https://github.com/tier4ik/tier4ik.github.io/tree/master/resume"
             >
               <img
                 class="cell__image"
@@ -94,7 +96,7 @@
                 alt="Resume"
               />
               <div class="cell__shield"></div>
-            </a>
+          </a>
           </div>
           <div class="cell projects__cell" data-number="13"></div>
         </div>
@@ -102,10 +104,10 @@
           <div class="cell projects__cell" data-number="14"></div>
           <div class="cell projects__cell" data-number="15">
             <a
+              target="_blank"
               class="cell__inner"
               href="https://tier4ik.github.io/agency/"
-              target="_blank"
-              rel="noopener"
+              data-repohref="https://github.com/tier4ik/tier4ik.github.io/tree/master/agency"
             >
               <img
                 class="cell__image"
@@ -117,10 +119,10 @@
           </div>
           <div class="cell projects__cell" data-number="16">
             <a
+              target="_blank"
               class="cell__inner"
               href="https://tier4ik.github.io/hotels/"
-              target="_blank"
-              rel="noopener"
+              data-repohref="https://github.com/tier4ik/tier4ik.github.io/tree/master/hotels"
             >
               <img
                 class="cell__image"
@@ -132,10 +134,10 @@
           </div>
           <div class="cell projects__cell" data-number="17">
             <a
+              target="_blank"
               class="cell__inner"
               href="https://tier4ik.github.io/WorkWork/"
-              target="_blank"
-              rel="noopener"
+              data-repohref="https://github.com/tier4ik/tier4ik.github.io/tree/master/WorkWork"
             >
               <img
                 class="cell__image"
@@ -151,10 +153,10 @@
           <div class="cell projects__cell" data-number="19"></div>
           <div class="cell projects__cell" data-number="20">
             <a
+              target="_blank"
               class="cell__inner"
               href="https://tier4ik.github.io/tinyone/"
-              target="_blank"
-              rel="noopener"
+              data-repohref="https://github.com/tier4ik/tier4ik.github.io/tree/master/tinyone"
             >
               <img
                 class="cell__image"
@@ -166,10 +168,10 @@
           </div>
           <div class="cell projects__cell" data-number="21">
             <a
+              target="_blank"
               class="cell__inner"
               href="https://tier4ik.github.io/pricing/"
-              target="_blank"
-              rel="noopener"
+              data-repohref="https://github.com/tier4ik/tier4ik.github.io/tree/master/pricing"
             >
               <img
                 class="cell__image"
@@ -186,6 +188,7 @@
     </section>
     <!-- Scripts -->
     <script src="./dist/scripts/projects/hoverManager.js"></script>
+    <script src="./dist/scripts/projects/linksManager.js"></script>
     <script src="./dist/scripts/projects/main.js"></script>
   </body>
 </html>

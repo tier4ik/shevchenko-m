@@ -5,6 +5,8 @@ function visualSetup() {
     body.classList.remove('body_hidden');
 }
 
-if (window.innerWidth > 768) {
+if (!navigator.userAgentData.mobile) {
     new HoverManager(); 
 }
+
+new linksManager();
