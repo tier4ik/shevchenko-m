@@ -8,3 +8,5 @@ function visualSetup() {
 if (!navigator.userAgentData.mobile) {
     new HoverManager(); 
 }
+
+new linksManager();
